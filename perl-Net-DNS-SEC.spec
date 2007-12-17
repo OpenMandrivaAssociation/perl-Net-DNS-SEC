@@ -22,7 +22,6 @@ BuildRequires:	perl(Digest::SHA)
 BuildRequires:	perl(Digest::BubbleBabble)
 BuildRequires:	perl(Net::DNS)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This perl modules implements DNSSEC extensions as described in
