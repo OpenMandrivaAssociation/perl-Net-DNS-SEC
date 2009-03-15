@@ -1,7 +1,7 @@
 %define	module	Net-DNS-SEC
 %define name	perl-%{module}
-%define version	0.14
-%define release	%mkrel 3
+%define version	0.15
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
