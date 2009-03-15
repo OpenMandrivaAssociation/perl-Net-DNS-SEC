@@ -11,9 +11,6 @@ License:	GPL or Artistic
 Group:		Development/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{module}-%{version}.tar.bz2
 URL:		http://search.cpan.org/dist/%{module}
-%if %{mdkversion} < 1010
-BuildRequires:	perl-devel
-%endif
 BuildRequires:	perl-Crypt-OpenSSL-RSA >= 0.17
 BuildRequires:	perl(Crypt::OpenSSL::DSA)
 BuildRequires:	perl(Crypt::OpenSSL::Bignum)
@@ -21,6 +18,7 @@ BuildRequires:	perl(Digest::SHA1)
 BuildRequires:	perl(Digest::SHA)
 BuildRequires:	perl(Digest::BubbleBabble)
 BuildRequires:	perl(Net::DNS)
+BuildRequires:	perl(MIME::Base32)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
