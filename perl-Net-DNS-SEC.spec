@@ -1,16 +1,16 @@
-%define	module	Net-DNS-SEC
-%define name	perl-%{module}
-%define version	0.15
-%define release	%mkrel 2
+%define	upstream_name	 Net-DNS-SEC
+%define upstream_version 0.15
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
+
 Summary:	DNSSEC support for Net::DNS perl module
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{module}-%{version}.tar.bz2
-URL:		http://search.cpan.org/dist/%{module}
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl-Crypt-OpenSSL-RSA >= 0.17
 BuildRequires:	perl(Crypt::OpenSSL::DSA)
 BuildRequires:	perl(Crypt::OpenSSL::Bignum)
@@ -20,7 +20,7 @@ BuildRequires:	perl(Digest::BubbleBabble)
 BuildRequires:	perl(Net::DNS)
 BuildRequires:	perl(MIME::Base32)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This perl modules implements DNSSEC extensions as described in
@@ -29,7 +29,7 @@ rfc 2535, 2931. With it, you can use DS, SIG, KEY and NXT record.
 It extends perl-Net-DNS to manipulate these records.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 rm -f t/14-misc.t
 chmod 755 demo/{key2ds,make-signed-keyset}
 
