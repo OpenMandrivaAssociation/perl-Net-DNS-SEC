@@ -16,6 +16,8 @@ BuildRequires: perl(Test::Pod)
 BuildRequires: perl(Crypt::OpenSSL::Bignum) >= 0.30.0
 BuildRequires: perl(Crypt::OpenSSL::DSA) >= 0.100.0
 BuildRequires: perl(Crypt::OpenSSL::RSA) >= 0.190.0
+BuildRequires: perl(Crypt::OpenSSL::ECDSA) >= 0.60.0
+BuildRequires: perl(Crypt::OpenSSL::Random)
 BuildRequires: perl(Digest::BubbleBabble) >= 0.10.0
 BuildRequires: perl(Digest::SHA) >= 5.230.0
 BuildRequires: perl(Crypt::OpenSSL::EC) >= 1.10.0
@@ -28,7 +30,7 @@ BuildRequires: perl(Math::BigInt)
 BuildRequires: perl(Net::DNS) >= 0.640.0
 BuildRequires: perl(Test::More) >= 0.470.0
 BuildRequires: perl(Time::Local)
-BuildRequires: perl(Crypt::OpenSSL::ECDSA) >= 0.60.0
+
 
 BuildArch:	noarch
 
