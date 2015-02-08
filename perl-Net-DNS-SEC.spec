@@ -18,8 +18,8 @@ BuildRequires: perl(Crypt::OpenSSL::DSA) >= 0.100.0
 BuildRequires: perl(Crypt::OpenSSL::RSA) >= 0.190.0
 BuildRequires: perl(Digest::BubbleBabble) >= 0.10.0
 BuildRequires: perl(Digest::SHA) >= 5.230.0
-BuildRequires: perl(Crypt::OpenSSL::EC)
-BuildRequires: perl(Digest::GOST)
+BuildRequires: perl(Crypt::OpenSSL::EC) >= 1.10.0
+BuildRequires: perl(Digest::GOST) >= 0.60.0
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(File::Basename)
 BuildRequires: perl(MIME::Base32)
