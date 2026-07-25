@@ -1,15 +1,15 @@
 %define	upstream_name	 Net-DNS-SEC
-%define upstream_version 0.21_11
+%define upstream_version 1.27
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	DNSSEC support for Net::DNS perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://metacpan.org/dist/Net-DNS-SEC
+Source0:	https://cpan.metacpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-SEC-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl-devel
