@@ -1,15 +1,13 @@
 %define	upstream_name	 Net-DNS-SEC
-%define upstream_version 1.27
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.27
+Release:	2
 
 Summary:	DNSSEC support for Net::DNS perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/Net-DNS-SEC
-Source0:	https://cpan.metacpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-SEC-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-SEC-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl-devel
@@ -42,7 +40,7 @@ rfc 2535, 2931. With it, you can use DS, SIG, KEY and NXT record.
 It extends perl-Net-DNS to manipulate these records.
 
 %prep
-%setup -qn %{upstream_name}-%{upstream_version}
+%setup -qn %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
